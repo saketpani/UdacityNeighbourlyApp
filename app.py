@@ -135,7 +135,7 @@ def main():
     print(' ----->>>> Flask Python Application running in development server')
     HOST = environ.get('SERVER_HOST', 'localhost')
     PORT = int(environ.get('SERVER_PORT', '5555'))
-    app.run(host=HOST, port=HOST, debug=settings.FLASK_DEBUG)
+    app.run(HOST, PORT, debug=settings.FLASK_DEBUG)
 
 
 if __name__ == '__main__':
